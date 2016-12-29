@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 #ruby "2.2.2"
 
+gem 'nokogiri', '1.6.8.1'
+
 # Rails (internacionalización)
 gem "rails", '~> 5.0.0'
 gem "rails-i18n"
@@ -89,11 +91,6 @@ gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git"
 
 # Formularios anidados (algunos con ajax)
 gem "cocoon", git: 'https://github.com/vtamara/cocoon.git'
-
-group :doc do
-    # Genera documentación en doc/api con bundle exec rake doc:rails
-    gem "sdoc", require: false
-end
 
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do
