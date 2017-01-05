@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 #ruby "2.2.2"
 
-gem 'nokogiri', '1.6.8.1'
-
 # Rails (internacionalización)
 gem "rails", '~> 5.0.0'
 gem "rails-i18n"
