@@ -358,6 +358,7 @@ DEPENDENCIES
   sass
   sass-rails
   simple_form
+  simplecov
   sip!
   spring
   turbolinks

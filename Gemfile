@@ -109,6 +109,10 @@ group :test do
   # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
   gem "spring"
 
+  gem 'simplecov'
+  # Envia resultados de pruebas desde travis a codeclimate
+  gem "codeclimate-test-reporter"
+
   # https://www.relishapp.com/womply/rails-style-guide/docs/developing-rails-applications/bundler
   # Lanza programas para examinar resultados
   gem "launchy"
@@ -123,8 +127,6 @@ group :test do
   # Pruebas de regresión que no requieren javascript
   gem "capybara"
   
-  # Envia resultados de pruebas desde travis a codeclimate
-  gem "codeclimate-test-reporter", require: nil
 end
 
 
