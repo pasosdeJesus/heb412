@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d6a3dad3b9e447d46b3e8bfc6b988037c60033a8
+  revision: d14171e7425fbf61ba20ce5ccf36189253c89e77
   specs:
     sip (2.0.b2)
       bootstrap-datepicker-rails
@@ -299,9 +299,9 @@ GEM
       tzinfo
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    tzinfo-data (1.2017.1)
+    tzinfo-data (1.2017.2)
       tzinfo (>= 1.0.0)
-    uglifier (3.1.9)
+    uglifier (3.1.10)
       execjs (>= 0.3.0, < 3)
     unicorn (5.2.0)
       kgio (~> 2.6)
@@ -372,4 +372,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   1.14.3
+   1.14.6
