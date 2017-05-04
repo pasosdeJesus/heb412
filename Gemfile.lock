@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: e84ced0579827b3e8db3b44fbe00ff7d04595a05
+  revision: 57baedae3ca869115ef3c0968b03cf03b6c4ee1e
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 84da85e89fb2a346edd26df9e44a2184f5c927bf
+  revision: ea79ff2bbe5ca48c71ddca38b063f4559ace950f
   specs:
     sip (2.0.b3)
       bootstrap-datepicker-rails
@@ -89,7 +89,7 @@ GEM
     callsite (0.0.11)
     camertron-eprun (1.1.1)
     cancancan (1.16.0)
-    capybara (2.13.0)
+    capybara (2.14.0)
       addressable
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -173,15 +173,14 @@ GEM
       less (~> 2.6.0)
       sprockets (> 2, < 4)
       tilt
-    libxml-ruby (2.8.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.5)
       mime-types (>= 1.16, < 4)
-    meta_request (0.4.0)
+    meta_request (0.4.2)
       callsite (~> 0.0, >= 0.0.11)
       rack-contrib (~> 1.1)
-      railties (>= 3.0.0, < 5.1.0)
+      railties (>= 3.0.0, < 5.2.0)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -265,9 +264,8 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
-    rspreadsheet (0.4.4)
+    rspreadsheet (0.4.5)
       andand (~> 1.3)
-      libxml-ruby (= 2.8)
       rubyzip (~> 1.1)
     rubyzip (1.2.1)
     sass (3.4.23)
@@ -301,7 +299,7 @@ GEM
     ttfunk (1.5.1)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
-    turbolinks-source (5.0.0)
+    turbolinks-source (5.0.2)
     twitter-bootstrap-rails (4.0.0)
       actionpack (~> 5.0, >= 5.0.1)
       execjs (~> 2.7)
