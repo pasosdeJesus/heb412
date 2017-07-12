@@ -95,8 +95,6 @@ group :development do
 
   gem "minitest"
 
-  #gem "minitest-reporters"
- 
   # Depurar
   #gem 'byebug'
 
