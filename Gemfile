@@ -111,7 +111,6 @@ group :test do
 
   gem 'simplecov'
   # Envia resultados de pruebas desde travis a codeclimate
-  gem "codeclimate-test-reporter"
 
   # https://www.relishapp.com/womply/rails-style-guide/docs/developing-rails-applications/bundler
   # Lanza programas para examinar resultados
