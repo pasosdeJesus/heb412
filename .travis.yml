@@ -1,6 +1,8 @@
 language: ruby
 rvm:
         - 2.4.0
+addon:
+        postgresql: "9.6"
 notifications:
         email: false
 script: bundle exec rails test -b
@@ -16,7 +18,7 @@ before_install:
         - psql -c 'CREATE DATABASE heb412_pru;' -U postgres
         - bundle install
         - cp db/structure.sql db/structure.sql.conlock
-        - sed -e "s/SET lock_timeout = 0;//g" db/structure.sql.conlock >db/structure.sql
+        - sed -e "s/^SET lock_timeout.*//g;s/^SET idle_in_transaction_session_timeout.*//g;s/^SET row_security.*//g" db/structure.sql.conlock >db/structure.sql
         - cp config/database.travis.yml config/database.yml
         - cp config/application.rb.plantilla config/application.rb
         - cp config/routes.rb.plantilla config/routes.rb
