@@ -83,7 +83,7 @@ gem 'sip', git: "https://github.com/pasosdeJesus/sip.git", branch: 'bas_modelo'
 #gem 'sip', path: '../sip'
 
 # Motor 
-gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git"
+gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git", branch: 'bas_modelo'
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
