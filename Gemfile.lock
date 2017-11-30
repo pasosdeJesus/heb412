@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 407979ad79f7370ff84c0630c70521fcf00349d5
+  revision: 99bb3f34a20d34a761c916a689b86248d449786d
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 961e34dfed095fb7fba268650392f8bb141a0376
+  revision: 991375a45e9c06523caa60903f10488f0a86e9aa
   specs:
     sip (2.0.b4)
       bootstrap-datepicker-rails
@@ -204,8 +204,8 @@ GEM
     public_suffix (3.0.1)
     puma (3.11.0)
     rack (2.0.3)
-    rack-contrib (1.2.0)
-      rack (>= 0.9.1)
+    rack-contrib (2.0.0)
+      rack (~> 2.0)
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rails (5.1.4)
