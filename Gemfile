@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 #ruby "2.2.2"
 
 # Rails (internacionalización)
-gem "rails", '~> 5.1.0'
+gem "rails", '~> 5.2.0'
+
+gem 'bootsnap', '>=1.1.0'
 gem "rails-i18n"
 
 # Postgresql
@@ -76,14 +78,14 @@ gem "paperclip"
 
 # Zonas horarias
 gem "tzinfo"
-gem "tzinfo-data"
+gem "tzinfo-data", platforms:  [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
+gem 'sip', git: "https://github.com/pasosdeJesus/sip.git", branch: 'rails5.2'
 #gem 'sip', path: '../sip'
 
 # Motor 
-gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git"
+gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git", branch: 'rails5.2'
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
