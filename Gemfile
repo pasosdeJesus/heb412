@@ -60,9 +60,6 @@ gem "bootstrap-datepicker-rails"
 # Formularios simples 
 gem "simple_form"
 
-# Formularios anidados (algunos con ajax)
-#gem "cocoon", git: "https://github.com/vtamara/cocoon.git"
-
 # Autenticación y roles
 gem "devise"
 gem "devise-i18n"
@@ -91,7 +88,8 @@ gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git"
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
-gem "cocoon", git: 'https://github.com/vtamara/cocoon.git'
+gem "cocoon", git: "https://github.com/vtamara/cocoon.git", branch: 'new_id_with_ajax'
+
 
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do
