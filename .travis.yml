@@ -1,17 +1,26 @@
 language: ruby
+
 rvm:
         - 2.4.0
+
 addon:
         postgresql: "9.6"
+
 notifications:
         email: false
-script: bundle exec rails test -b
+
 after_success: 
         - CODECLIMATE_REPO_TOKEN= bundle exec codeclimate-test-reporter 
+        - CC_TEST_REPORTER_ID=2fb282f54ad990d39d0c0801d92f4554adce97dac8d4eb0dc66dc96301f969c9
+
 env:
         global:
                 - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
 before_install: 
+        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        - chmod +x ./cc-test-reporter
+        - ./cc-test-reporter before-build
         - sudo locale-gen --no-archive es_CO.UTF-8
         - sudo /etc/init.d/postgresql stop
         - sudo /etc/init.d/postgresql start 9.6
@@ -25,4 +34,10 @@ before_install:
         - sed -e 's/provider = libc,//g' db/structure.sql.copia > db/structure.sql 
         - rake db:setup
         - rake sip:indices
+
+script: 
+        - bundle exec rails test -b
+
+after_script:
+        - ./cc-test-reporter after-build -t simplecov --exit-code $TRAVIS_TEST_RESULT
 
