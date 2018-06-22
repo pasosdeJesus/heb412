@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 28438d1dfc5c9f7b1fc43e4487ecfaa6614db8f9
+  revision: 6242fc9b3d062515187e91f4741025424413db7b
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -11,9 +11,9 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 26e52c7deeaf703bcabbeed8fc2baac5c9142ffb
+  revision: d22b153f0e9774e14a791227950e8b11d58931ca
   specs:
-    sip (2.0.b4)
+    sip (2.0.b5)
       bootstrap-datepicker-rails
       cancancan
       chosen-rails
@@ -99,7 +99,7 @@ GIT
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
-  revision: f710fc1759612895846adeb7a7753e4191ddeb10
+  revision: 9d29a8abcc5b6ed9aefcad85ca54dd1364262583
   branch: new_id_with_ajax
   specs:
     cocoon (1.2.11)
@@ -111,7 +111,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     andand (1.3.3)
     arel (9.0.0)
-    bcrypt (3.1.11)
+    bcrypt (3.1.12)
     bindex (0.5.0)
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
@@ -123,13 +123,13 @@ GEM
     callsite (0.0.11)
     camertron-eprun (1.1.1)
     cancancan (2.2.0)
-    capybara (3.0.3)
+    capybara (3.2.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      xpath (~> 3.0)
+      xpath (~> 3.1)
     chosen-rails (1.8.3)
       coffee-rails (>= 3.2)
       railties (>= 3.0)
@@ -157,10 +157,10 @@ GEM
       warden (~> 1.2.3)
     devise-i18n (1.6.2)
       devise (>= 4.4)
-    docile (1.3.0)
+    docile (1.3.1)
     erubi (1.7.1)
     execjs (2.7.0)
-    ffi (1.9.23)
+    ffi (1.9.25)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
     globalid (0.4.1)
@@ -211,7 +211,7 @@ GEM
     msgpack (1.2.4)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.8.2)
+    nokogiri (1.8.3)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     paperclip (6.0.0)
@@ -282,9 +282,9 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    simple_form (4.0.0)
-      actionpack (> 4)
-      activemodel (> 4)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     simplecov (0.16.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
@@ -292,7 +292,7 @@ GEM
     simplecov-html (0.10.2)
     spring (2.0.2)
       activesupport (>= 4.2)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
@@ -319,7 +319,7 @@ GEM
       tzinfo
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (4.1.10)
+    uglifier (4.1.12)
       execjs (>= 0.3.0, < 3)
     unicorn (5.4.0)
       kgio (~> 2.6)
@@ -335,7 +335,7 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
     will_paginate (3.1.6)
-    xpath (3.0.0)
+    xpath (3.1.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
