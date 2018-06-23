@@ -105,26 +105,19 @@ end
 
 # Los siguientes son para pruebas y no tiene generadores requeridos en desarrollo
 group :test do
-  # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
-  gem "spring"
-
-  gem 'simplecov'
-  # Envia resultados de pruebas desde travis a codeclimate
-
-  # https://www.relishapp.com/womply/rails-style-guide/docs/developing-rails-applications/bundler
-  # Lanza programas para examinar resultados
-  gem "launchy"
-
+  gem 'spring'
   gem 'rails-controller-testing'
-
+  gem 'launchy'
+  gem 'simplecov'
+  gem 'selenium-webdriver'
+  gem 'connection_pool'
+  gem 'minitest-reporters'
+  gem 'minitest-rails-capybara'
+  gem 'poltergeist'
+  
+  # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
-
-  gem 'meta_request'
-
-  # Pruebas de regresión que no requieren javascript
-  gem "capybara"
-  
 end
 
 
