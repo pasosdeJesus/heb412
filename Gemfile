@@ -3,11 +3,17 @@ source 'https://rubygems.org'
 #ruby "2.2.2"
 
 # Rails (internacionalización)
-gem "rails", '~> 5.1.0'
+#gem "rails", '~> 5.2.0'
+# Resuelve problema con minitest y rails 5.2.0
+gem "rails", '~> 5.2.0'
+
+gem 'bigdecimal'
+
+gem 'bootsnap', '>=1.1.0'
 gem "rails-i18n"
 
 # Postgresql
-gem "pg"
+gem "pg"#, '~> 0.21'
 
 gem 'puma'
 
@@ -17,7 +23,6 @@ gem "colorize"
 # Para generar CSS
 gem "sass"
 gem "sass-rails"
-gem "compass-rails"
 
 # Cuadros de selección para búsquedas
 gem 'chosen-rails'
@@ -57,9 +62,6 @@ gem "bootstrap-datepicker-rails"
 # Formularios simples 
 gem "simple_form"
 
-# Formularios anidados (algunos con ajax)
-#gem "cocoon", git: "https://github.com/vtamara/cocoon.git"
-
 # Autenticación y roles
 gem "devise"
 gem "devise-i18n"
@@ -77,7 +79,7 @@ gem "paperclip"
 
 # Zonas horarias
 gem "tzinfo"
-gem "tzinfo-data"
+gem "tzinfo-data", platforms:  [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Motor de sistemas de información estilo Pasos de Jesús
 gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
@@ -88,7 +90,8 @@ gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git"
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
-gem "cocoon", git: 'https://github.com/vtamara/cocoon.git'
+gem "cocoon", git: "https://github.com/vtamara/cocoon.git", branch: 'new_id_with_ajax'
+
 
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do
@@ -104,26 +107,19 @@ end
 
 # Los siguientes son para pruebas y no tiene generadores requeridos en desarrollo
 group :test do
-  # Acelera ejecutando en fondo.  https://github.com/jonleighton/spring
-  gem "spring"
-
-  gem 'simplecov'
-  # Envia resultados de pruebas desde travis a codeclimate
-
-  # https://www.relishapp.com/womply/rails-style-guide/docs/developing-rails-applications/bundler
-  # Lanza programas para examinar resultados
-  gem "launchy"
-
+  gem 'spring'
   gem 'rails-controller-testing'
-
+  gem 'launchy'
+  gem 'simplecov'
+  gem 'selenium-webdriver'
+  gem 'connection_pool'
+  gem 'minitest-reporters'
+  gem 'minitest-rails-capybara'
+  gem 'poltergeist'
+  
+  # Para examinar errores, usar "rescue rspec" en lugar de "rspec"
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
-
-  gem 'meta_request'
-
-  # Pruebas de regresión que no requieren javascript
-  gem "capybara"
-  
 end
 
 
