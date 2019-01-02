@@ -3,7 +3,8 @@
 
 ![Logo de heb412](https://raw.githubusercontent.com/pasosdeJesus/heb412/master/public/images/logo.jpg)
 
-Sistema para manejo de un archivo de prensa
+
+Sistema para manejar nube de documentos y plantillas ods y odt
 
 ### Requerimientos
 
