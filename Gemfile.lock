@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 10aee2bc156636225fdbb1b2e9362a1d57523e51
+  revision: c976a06614d7d9acd3255ac05de605b26758a5cf
   specs:
     heb412_gen (1.0.a1)
       chosen-rails
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 77553c8c16f12d172c10871d12b03ce12bbdf828
+  revision: 40a9bf5f347a1c61a62f726f5d32eba2fd064960
   specs:
     sip (2.0.b5)
       bootstrap-datepicker-rails
@@ -206,7 +206,7 @@ GEM
     msgpack (1.2.4)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.9.1)
+    nokogiri (1.10.0)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     paperclip (6.1.0)
