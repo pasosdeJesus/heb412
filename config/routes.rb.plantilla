@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
 
-  scope '/' do
+  scope '/heb412' do
     devise_scope :usuario do
       get 'sign_out' => 'devise/sessions#destroy'
     end
@@ -38,6 +38,6 @@ Rails.application.routes.draw do
     root 'sip/hogar#index'
   end # scope
 
-  mount Heb412Gen::Engine, at: "/", as: "heb412_gen"
-  mount Sip::Engine, at: "/", as: "sip"
+  mount Heb412Gen::Engine, at: "/heb412", as: "heb412_gen"
+  mount Sip::Engine, at: "/heb412", as: "sip"
 end

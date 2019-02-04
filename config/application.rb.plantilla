@@ -25,5 +25,7 @@ module Heb412
     config.x.url_colchon = 'colchon-articulos'
 
     config.formato_fecha = 'dd/mm/yyyy'
+
+    config.relative_url_root = '/heb412'
   end
 end
