@@ -1,7 +1,7 @@
 # Heb412
 [![Estado Construcción](https://api.travis-ci.org/pasosdeJesus/heb412.svg?branch=master)](https://travis-ci.org/pasosdeJesus/heb412) [![Clima del Código](https://codeclimate.com/github/pasosdeJesus/heb412/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/heb412) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/heb412/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/heb412) [![security](https://hakiri.io/github/pasosdeJesus/heb412/master.svg)](https://hakiri.io/github/pasosdeJesus/heb412/master) [![Dependencias](https://gemnasium.com/pasosdeJesus/heb412.svg)](https://gemnasium.com/pasosdeJesus/heb412) 
 
-![Logo de heb412](https://raw.githubusercontent.com/pasosdeJesus/heb412/master/public/images/logo.jpg)
+![Logo de heb412](https://raw.githubusercontent.com/pasosdeJesus/heb412/master/app/assets/images/logo.jpg)
 
 
 Sistema para manejar nube de documentos y plantillas ods y odt
