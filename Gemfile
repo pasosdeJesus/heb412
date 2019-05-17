@@ -2,10 +2,7 @@ source 'https://rubygems.org'
 
 #ruby "2.2.2"
 
-# Rails (internacionalización)
-#gem "rails", '~> 5.2.0'
-# Resuelve problema con minitest y rails 5.2.0
-gem "rails", '~> 5.2.0'
+gem "rails", '~> 6.0.0.rc1'
 
 gem 'bigdecimal'
 
@@ -25,7 +22,7 @@ gem "sass"
 gem "sass-rails"
 
 # Cuadros de selección para búsquedas
-gem 'chosen-rails'
+gem 'chosen-rails'#, git: "https://github.com/vtamara/chosen-rails.git", branch: 'several-fixes'
 
 # Dialogo modal
 gem 'lazybox'
@@ -81,11 +78,11 @@ gem "paperclip"
 gem "tzinfo"
 
 # Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: "https://github.com/pasosdeJesus/sip.git"
+gem 'sip', git: "https://github.com/pasosdeJesus/sip.git", branch: :rails6
 #gem 'sip', path: '../sip'
 
 # Motor 
-gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git"
+gem 'heb412_gen', git: "https://github.com/pasosdeJesus/heb412_gen.git", branch: :rails6
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
