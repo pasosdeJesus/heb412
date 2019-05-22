@@ -100,14 +100,10 @@ end
 
 # Los siguientes son para pruebas y no tiene generadores requeridos en desarrollo
 group :test do
-  gem 'spring'
-  gem 'rails-controller-testing'
-  gem 'launchy'
   gem 'simplecov'
-  gem 'selenium-webdriver'
-  gem 'connection_pool'
-  gem 'minitest-reporters'
+  gem 'capybara'
   gem 'poltergeist'
+  gem 'selenium-webdriver'
   
   # Para examinar errores, usar 'rescue rspec' en lugar de 'rspec'
   gem 'pry-rescue'
