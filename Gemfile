@@ -75,11 +75,11 @@ gem 'paperclip'
 gem 'tzinfo'
 
 # Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails6
+gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
 #gem 'sip', path: '../sip'
 
 # Motor 
-gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :rails6
+gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git'
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
