@@ -78,13 +78,16 @@ gem 'tzinfo'
 gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
 #gem 'sip', path: '../sip'
 
-# Motor 
+# Motor de formularios y encuestas
+gem 'mr519_gen', git: 'https://github.com/pasosdeJesus/mr519_gen.git'
+#gem 'mr519_gen', path: '../mr519_gen'
+
+# Motor de nube y exportación
 gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git'
 #gem 'heb412_gen', path: '../heb412_gen'
 
 # Formularios anidados (algunos con ajax)
 gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax'
-
 
 # Los siguientes son para desarrollo o para pruebas con generadores
 group :development do
