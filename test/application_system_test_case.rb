@@ -7,14 +7,24 @@ end
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
-  driven_by :poltergeist, screen_size: [1400, 1400], options: { 
-    js_errors: true,
+  driven_by :selenium, using: :headless_chrome, screen_size: [1400, 1400], options: { 
+    #js_errors: true,
     timeout: 3.minutes,
-    logger: NilLogger.new#,
+    #logger: NilLogger.new#,
 #    phantomjs_logger: STDOUT,
 #    phantomjs_options: ['--debug=true'],
 #    debug: true 
   }
+
+  Capybara.register_driver :headless_chrome do |app|
+      capabilities = Selenium::WebDriver::Remote::Capabilities.chrome(
+            chromeOptions: { args: %w(headless disable-gpu) }
+      )
+
+      Capybara::Selenium::Driver.new app,
+        browser: :chrome,
+        desired_capabilities: capabilities
+  end
 
   def setup
 #    load "#{Rails.root}/db/seeds.rb"

@@ -5,6 +5,7 @@ SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
 SET check_function_bodies = false;
+SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
@@ -926,7 +927,7 @@ CREATE TABLE public.sip_grupoper (
 -- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en heb412gen_des';
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en heb412_desarrollo';
 
 
 --
@@ -2384,7 +2385,6 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20190418014012'),
 ('20190418123920'),
 ('20190426125052'),
-('20190426125420'),
 ('20190605143420'),
 ('20190612111043'),
 ('20190618135559'),
