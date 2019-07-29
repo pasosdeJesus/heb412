@@ -110,7 +110,6 @@ end
 group :test do
   gem 'simplecov'
   gem 'capybara'
-  gem 'poltergeist'
   gem 'selenium-webdriver'
   
   # Para examinar errores, usar 'rescue rspec' en lugar de 'rspec'
