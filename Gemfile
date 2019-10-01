@@ -1,129 +1,109 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 6.0.0.rc1'
-gem 'rails-i18n'
 
-# Postgresql
-gem 'pg'#, '~> 0.21'
-
-gem 'puma'
-
-# Colores en consola
-gem 'colorize'
-
-# Para generar CSS
-gem 'sass-rails'
-
-gem 'webpacker'
+gem 'bcrypt'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
-# Cuadros de selección para búsquedas
-gem 'chosen-rails', git: 'https://github.com/vtamara/chosen-rails.git', branch: 'several-fixes'
-
-# Dialogo modal
-gem 'lazybox'
-
-# Para convertir de tiff a jpg
-#gem 'rmagick'
-
-gem 'font-awesome-rails'
-#
-# Para generar PDF
-gem 'prawn'
-
-# API JSON facil. Ver: https://github.com/rails/jbuilder
-gem 'jbuilder'
-
-# Uglifier comprime recursos Javascript
-gem 'uglifier'
-
-# CoffeeScript para recuersos .js.coffee y vistas
-gem 'coffee-rails'
-
-# jquery como librería JavaScript
-gem 'jquery-rails'
-
-gem 'jquery-ui-rails'
-
-# Seguir enlaces más rápido. Ver: https://github.com/rails/turbolinks
-gem 'turbolinks'
-
-# Ambiente de CSS
-gem 'twitter-bootstrap-rails'
 gem 'bootstrap-datepicker-rails'
 
+gem 'chosen-rails', git: 'https://github.com/vtamara/chosen-rails.git', branch: 'several-fixes' # Cuadros de selección para búsquedas
 
-# Facilita elegir colores en tema
-gem 'pick-a-color-rails'
-gem 'tiny-color-rails'
+gem 'coffee-rails' 
 
-# Formularios simples 
-gem 'simple_form'
-
-# Autenticación y roles
-gem 'devise'
-gem 'devise-i18n'
 gem 'cancancan'
-gem 'bcrypt'
 
-# Listados en páginas
-gem 'will_paginate'
+gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax' # Formularios anidados (algunos con ajax)
 
-# ICU con CLDR
-gem 'twitter_cldr'
+gem 'colorize' # Colores en consola
 
-# Maneja adjuntos
-gem 'paperclip'
+gem 'devise' # Autenticación 
 
-# Zonas horarias
-gem 'tzinfo'
+gem 'devise-i18n'
 
-# Motor de sistemas de información estilo Pasos de Jesús
-gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
-#gem 'sip', path: '../sip'
-
-# Motor de formularios y encuestas
-gem 'mr519_gen', git: 'https://github.com/pasosdeJesus/mr519_gen.git'
-#gem 'mr519_gen', path: '../mr519_gen'
+gem 'font-awesome-rails'
 
 # Motor de nube y exportación
 gem 'heb412_gen', git: 'https://github.com/pasosdeJesus/heb412_gen.git'
 #gem 'heb412_gen', path: '../heb412_gen'
 
-# Formularios anidados (algunos con ajax)
-gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax'
+gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
 
-# Los siguientes son para desarrollo o para pruebas con generadores
+gem 'jquery-rails' # jquery como librería JavaScript
+
+gem 'jquery-ui-rails'
+
+gem 'lazybox' # Dialogo modal
+
+# Motor de formularios y encuestas
+gem 'mr519_gen', git: 'https://github.com/pasosdeJesus/mr519_gen.git'
+#gem 'mr519_gen', path: '../mr519_gen'
+
+gem 'paperclip' # Maneja adjuntos
+
+gem 'pick-a-color-rails'# Facilita elegir colores en tema
+
+gem 'prawn' # Para generar PDF
+
+gem 'pg' # Postgresql
+
+gem 'puma'
+
+gem 'rails', '~> 6.0.0.rc1'
+
+gem 'rails-i18n'
+
+gem 'sass-rails' # Para generar CSS
+
+gem 'simple_form' # Formularios simples 
+
+# Motor de sistemas de información estilo Pasos de Jesús
+gem 'sip', git: 'https://github.com/pasosdeJesus/sip.git'
+#gem 'sip', path: '../sip'
+gem 'tiny-color-rails'
+
+gem 'turbolinks' # Seguir enlaces más rápido. Ver: https://github.com/rails/turbolinks
+
+gem 'twitter_cldr' # ICU con CLDR
+
+gem 'twitter-bootstrap-rails' # Ambiente de CSS
+
+gem 'tzinfo' # Zonas horarias
+
+gem 'uglifier' # Uglifier comprime recursos Javascript
+
+gem 'webpacker'
+
+
+
+gem 'will_paginate' # Listados en páginas
+
+
 group :development do
 
+  #gem 'byebug' # Depurar
+
   gem 'minitest'
+  
+  gem 'web-console' # Consola en páginas 
 
-  # Depurar
-  #gem 'byebug'
-
-  # Consola irb en páginas con excepciones o usando <%= console %> en vistas
-  gem 'web-console'
 end
 
-# Los siguientes son para pruebas y no tiene generadores requeridos en desarrollo
+
 group :test do
-  gem 'simplecov'
+
   gem 'capybara'
+
   gem 'selenium-webdriver'
+
+  gem 'simplecov'
   
-  # Para examinar errores, usar 'rescue rspec' en lugar de 'rspec'
-  gem 'pry-rescue'
-  gem 'pry-stack_explorer'
 end
 
 
 group :production do
-  # Para despliegue
-  gem 'unicorn'
+  
+  gem 'unicorn' # Para despliegue
 
-  # Requerido por heroku para usar stdout como bitacora
-  gem 'rails_12factor'
 end
-
 
