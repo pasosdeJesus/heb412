@@ -35,9 +35,13 @@ gem 'jquery-ui-rails'
 
 gem 'lazybox' # Dialogo modal
 
+gem 'libxml-ruby'
+
 # Motor de formularios y encuestas
 gem 'mr519_gen', git: 'https://github.com/pasosdeJesus/mr519_gen.git'
 #gem 'mr519_gen', path: '../mr519_gen'
+
+gem 'odf-report' # Genera ODT
 
 gem 'paperclip' # Maneja adjuntos
 
@@ -52,6 +56,10 @@ gem 'puma'
 gem 'rails', '~> 6.0.0.rc1'
 
 gem 'rails-i18n'
+
+gem 'rubyzip', '>= 2.0'
+
+gem 'rspreadsheet'
 
 gem 'sass-rails' # Para generar CSS
 
