@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 674480178d914964e4c3961f91941798f486e8d3
+  revision: a9b4b2191976a5047558af41f357a7e81752d537
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 1b301b087e7f6aa1f16c0a059f0ec248ffaf2f21
+  revision: fbbc9b5e6bf29ef182910e6570cea4fb400165d2
   specs:
     mr519_gen (0.2.0)
       rails (~> 6.0.0.rc1, >= 6.0.0.rc1)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: bdc77263dcc0d380ca65702e73c4a600b35b5982
+  revision: 42f4551ba5deb80c1c0a77627cb91c3da2424c4c
   specs:
     sip (2.0.b7)
       cancancan
@@ -108,7 +108,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.4)
     camertron-eprun (1.1.1)
-    cancancan (3.0.1)
+    cancancan (3.0.2)
     capybara (3.30.0)
       addressable
       mini_mime (>= 0.1.3)
