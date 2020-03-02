@@ -201,7 +201,7 @@ GEM
       pdf-core (~> 0.7.0)
       ttfunk (~> 1.5)
     public_suffix (4.0.3)
-    puma (4.3.2)
+    puma (4.3.3)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-proxy (0.6.5)
@@ -333,7 +333,7 @@ DEPENDENCIES
   pg
   pick-a-color-rails
   prawn
-  puma
+  puma (>= 4.3.3)
   rails (~> 6.0.0.rc1)
   rails-i18n
   rspreadsheet
@@ -351,4 +351,4 @@ DEPENDENCIES
   will_paginate
 
 BUNDLED WITH
-   2.0.2
+   1.17.3
