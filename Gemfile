@@ -25,8 +25,6 @@ gem 'odf-report' # Genera ODT
 
 gem 'paperclip' # Maneja adjuntos
 
-gem 'pick-a-color-rails'# Facilita elegir colores en tema
-
 gem 'prawn' # Para generar PDF
 
 gem 'pg' # Postgresql
@@ -36,6 +34,8 @@ gem 'puma'
 gem 'rails', '~> 6.0.0.rc1'
 
 gem 'rails-i18n'
+
+gem 'redcarpet'
 
 gem 'rubyzip', '>= 2.0'
 
