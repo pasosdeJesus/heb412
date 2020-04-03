@@ -9,8 +9,8 @@
 <% content_for :menu do %>
   <%= grupo_menus do %>
     <% if !current_usuario.nil? %>
-      <!--%= opcion_menu "Examinar", heb412_gen.examinar_path %-->
-      <%= opcion_menu "Nueva Entrada", heb412_gen.new_doc_path %>
+        <%= opcion_menu "Actores sociales", sip.actoressociales_path %>
+        <%= opcion_menu "Personas", sip.personas_path %>
     <% end %>
   <% end %>
   <%= grupo_menus :pull => :right do %>

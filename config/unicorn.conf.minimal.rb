@@ -6,7 +6,7 @@
 # See also http://unicorn.bogomips.org/examples/unicorn.conf.rb for
 # a more verbose configuration using more features.
 
-listen 2011 # by default Unicorn listens on port 2011
+listen ENV['PUERTOUNICORN']
 APP_PATH = "/var/www/htdocs/heb412"
 working_directory APP_PATH
 worker_processes 2 # this should be >= nr_cpus
