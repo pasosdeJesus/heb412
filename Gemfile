@@ -70,14 +70,18 @@ gem 'heb412_gen',  # Motor de nube y llenado de plantillas
   #path: '../heb412_gen'
 
 
-group :development do
+group :development, :test do
 
   #gem 'byebug' # Depurar
 
+  gem 'minitest'
+ 
+end
+
+group :development do
+
   gem 'colorize' # Colores en consola
 
-  gem 'minitest'
-  
   gem 'web-console' # Consola en páginas 
 
 end
