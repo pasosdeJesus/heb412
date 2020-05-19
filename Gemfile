@@ -5,17 +5,17 @@ gem 'bcrypt'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
-gem 'coffee-rails' 
+gem 'coffee-rails' , '>= 5.0.0'
 
 gem 'cancancan'
 
 gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax' # Formularios anidados (algunos con ajax)
 
-gem 'devise' # Autenticación 
+gem 'devise' , '>= 4.7.1' # Autenticación 
 
-gem 'devise-i18n'
+gem 'devise-i18n', '>= 1.9.1'
 
-gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
+gem 'jbuilder' , '>= 2.10.0' # API JSON facil. Ver: https://github.com/rails/jbuilder
 
 gem 'lazybox' # Dialogo modal
 
@@ -23,7 +23,7 @@ gem 'libxml-ruby'
 
 gem 'odf-report' # Genera ODT
 
-gem 'paperclip' # Maneja adjuntos
+gem 'paperclip' , '>= 6.1.0' # Maneja adjuntos
 
 gem 'prawn' # Para generar PDF
 
@@ -31,9 +31,9 @@ gem 'pg' # Postgresql
 
 gem 'puma'
 
-gem 'rails', '~> 6.0.0.rc1'
+gem 'rails', '~> 6.0.3.1'
 
-gem 'rails-i18n'
+gem 'rails-i18n', '>= 6.0.0'
 
 gem 'redcarpet'
 
@@ -41,15 +41,15 @@ gem 'rubyzip', '>= 2.0'
 
 gem 'rspreadsheet'
 
-gem 'sassc-rails' # Para generar CSS
+gem 'sassc-rails' , '>= 2.1.2' # Para generar CSS
 
-gem 'simple_form' # Formularios simples 
+gem 'simple_form' , '>= 5.0.2' # Formularios simples 
 
 gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
 
-gem 'webpacker'
+gem 'webpacker', '>= 5.1.1'
 
 gem 'will_paginate' # Listados en páginas
 
@@ -82,7 +82,7 @@ group :development do
 
   gem 'colorize' # Colores en consola
 
-  gem 'web-console' # Consola en páginas 
+  gem 'web-console' , '>= 4.0.2' # Consola en páginas 
 
 end
 
