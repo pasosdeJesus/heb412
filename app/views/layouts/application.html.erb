@@ -29,6 +29,10 @@
           <%= opcion_menu "Usuarios", main_app.usuarios_path,
             desplegable: true %>
         <% end %>
+        <% if can? :manage, Mr519Gen::Formulario %>
+          <%= opcion_menu "Formularios", mr519_gen.formularios_path, 
+            desplegable: true %>
+        <% end %>
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= opcion_menu "Tablas Básicas", sip.tablasbasicas_path,
             desplegable: true %>
