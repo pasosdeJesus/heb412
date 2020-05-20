@@ -44,6 +44,7 @@ before_install:
         - cp config/routes.rb.plantilla config/routes.rb
         - rake db:setup
         - rake sip:indices
+        - bin/rails assets:precompile --trace
 
 script: 
         - bundle exec rails test -b
