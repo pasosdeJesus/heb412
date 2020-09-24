@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 2bf9fb58ab459e9d28902fe4552755733ac0cab9
+  revision: c58f225cd86afc0d9a79900c6a65b073951e80fb
   specs:
     heb412_gen (1.0.b6)
       mr519_gen
@@ -258,7 +258,7 @@ GEM
     simplecov (0.19.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
-    simplecov-html (0.12.2)
+    simplecov-html (0.12.3)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
