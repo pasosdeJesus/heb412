@@ -39,5 +39,6 @@ Rails.application.routes.draw do
   end # scope
 
   mount Heb412Gen::Engine, at: "/heb412", as: "heb412_gen"
+  mount Mr519Gen::Engine, at: "/heb412", as: "mr519_gen"
   mount Sip::Engine, at: "/heb412", as: "sip"
 end
