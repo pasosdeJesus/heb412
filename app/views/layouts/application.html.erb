@@ -18,8 +18,11 @@
       <%= despliega_abajo "Documentos" do %>
         <%= opcion_menu "Nube", heb412_gen.sisini_path, 
           desplegable: true %>
-        <%= opcion_menu "Definir Plantilla Hoja de Calculo M", 
-          heb412_gen.new_plantillahcm_path,
+        <%= opcion_menu "Plantillas para listados", 
+          heb412_gen.plantillashcm_path,
+          desplegable: true %>
+        <%= opcion_menu "Plantillas para un registro", 
+          heb412_gen.plantillashcr_path,
           desplegable: true %>
       <% end %>
       <%= despliega_abajo "Administrar" do %>
