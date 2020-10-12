@@ -93,8 +93,8 @@ group :test do
 
   gem 'selenium-webdriver'
 
-  gem 'simplecov'
-  
+  gem 'simplecov', '<0.18'
+
 end
 
 
