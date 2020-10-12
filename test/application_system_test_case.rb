@@ -1,14 +1,11 @@
 require "test_helper"
 
-require 'byebug'
-
 class NilLogger
     def puts * ; end
 end
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
 
-  byebug
   driven_by :selenium, using: :headless_chrome, 
     screen_size: [1400, 1400], options: { 
     #js_errors: true,

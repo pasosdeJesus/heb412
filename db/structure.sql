@@ -1063,7 +1063,7 @@ CREATE TABLE public.sip_grupoper (
 -- Name: TABLE sip_grupoper; Type: COMMENT; Schema: public; Owner: -
 --
 
-COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en heb412gen_des';
+COMMENT ON TABLE public.sip_grupoper IS 'Creado por sip en heb412_desarrollo';
 
 
 --
@@ -2762,7 +2762,6 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200727021707'),
 ('20200907174303'),
 ('20200921123831'),
-('20201009004421'),
-('20201012135320');
+('20201009004421');
 
 
