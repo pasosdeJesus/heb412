@@ -23,6 +23,8 @@ Rails.application.routes.draw do
       end
     end
     resources :usuarios, path_names: { new: 'nuevo', edit: 'edita' } 
+    get 'personas/prueba60pr2' => 'sip/personas#prueba60pr2', 
+      :as => 'personas_prueba61pr2'
 
     namespace :admin do
       ab = Ability.new

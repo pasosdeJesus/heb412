@@ -16,4 +16,14 @@ class Sip::PersonasController < Heb412Gen::ModelosController
     super(c)
   end
 
+  def prueba60pr2
+    if main_app.respond_to?(:personas_path) && 
+        main_app.methods.include?(:personas_path)
+      puts "*** main_app.respond_to?(:personas_path) debería ser falso " + 
+        "(como fuera de este controlador)"
+      r=main_app.personas_path
+      puts r
+    end
+  end
+
 end
