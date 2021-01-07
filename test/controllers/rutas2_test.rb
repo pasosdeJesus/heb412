@@ -11,10 +11,13 @@ class RutasTest < ActionDispatch::IntegrationTest
     post '/heb412/usuarios/sign_in'
     follow_redirect!
     assert_response :success
-    #puts response.body
-    get '/heb412/personas/prueba60pr2'
+    get '/heb412/personas'
     assert_response :success
-    #puts response.body
+    begin
+      r=main_app.personas_path
+    rescue NoMethodError => e
+      assert_not main_app.respond_to?(:personas_path)
+    end
   end
 
 end
