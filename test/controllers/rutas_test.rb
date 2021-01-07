@@ -4,6 +4,7 @@ class RutasTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
   include Sip::Engine.routes.url_helpers
 
+  # ejemplo con base en https://medium.com/@yutafujii_59175/a-simple-login-test-with-rails-devise-and-unit-test-68bc4fade4ba
   test "personas_path usable" do 
     assert_equal '/heb412/personas', personas_path
     usuario = @current_usuario = ::Usuario.find(1)
