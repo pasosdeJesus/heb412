@@ -6,7 +6,7 @@ class PuedeVerHogarTest < ActionDispatch::IntegrationTest
     get Rails.configuration.relative_url_root
     # byebug
     assert_response :success
-    puts response.body
+    #puts response.body
     #assert_select "li" "Acerca de"
   end
 
