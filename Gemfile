@@ -31,8 +31,6 @@ gem 'prawn' # Para generar PDF
 
 gem 'pg' # Postgresql
 
-gem 'puma'
-
 gem 'rails', '~> 6.0.3.4'
 
 gem 'rails-i18n'
@@ -60,15 +58,15 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git'
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
   #path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
-  git: 'https://github.com/pasosdeJesus/mr519_gen.git'
+  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :main
   #path: '../mr519_gen'
 
 gem 'heb412_gen',  # Motor de nube y llenado de plantillas
-  git: 'https://github.com/pasosdeJesus/heb412_gen.git'
+  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :main
   #path: '../heb412_gen'
 
 
@@ -76,13 +74,16 @@ group :development, :test do
 
   #gem 'byebug' # Depurar
 
+  gem 'dotenv-rails'
+
   gem 'minitest'
- 
 end
 
 group :development do
 
   gem 'colorize' # Colores en consola
+
+  gem 'puma'
 
   gem 'web-console' # Consola en páginas 
 

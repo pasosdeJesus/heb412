@@ -1,3 +1,4 @@
-Heb412::Application.config.relative_url_root = '/heb412'
-Heb412::Application.config.assets.prefix = '/heb412/assets/'
-
+Heb412::Application.config.relative_url_root = ENV.fetch(
+  'RUTA_RELATIVA', '/heb412')
+Heb412::Application.config.assets.prefix = ENV.fetch(
+  'RUTA_RELATIVA', '/heb412') + '/assets'
