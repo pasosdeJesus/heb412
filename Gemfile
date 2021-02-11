@@ -31,7 +31,7 @@ gem 'prawn' # Para generar PDF
 
 gem 'pg' # Postgresql
 
-gem 'rails', '~> 6.0.3.4'
+gem 'rails', '~> 6.0.3.5'
 
 gem 'rails-i18n'
 
