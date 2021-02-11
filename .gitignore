@@ -39,3 +39,5 @@ coverage/
 
 /config/master.key
 .env
+public/sisarch
+config/credentials.yml.enc
