@@ -39,7 +39,7 @@ module Heb412
 
     #config.web_console.whitelisted_ips = ['186.154.35.237']
 
-    config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/heb412')
+    #config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/heb412')
 
     # sip
     config.x.formato_fecha = ENV.fetch('SIP_FORMATO_FECHA', 'dd/M/yyyy')
