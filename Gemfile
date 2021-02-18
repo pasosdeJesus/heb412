@@ -31,7 +31,7 @@ gem 'prawn' # Para generar PDF
 
 gem 'pg' # Postgresql
 
-gem 'rails', '~> 6.0.3.5'
+gem 'rails', '~> 6.1'
 
 gem 'rails-i18n'
 
@@ -93,6 +93,8 @@ end
 group :test do
 
   gem 'capybara'
+
+  gem 'selenium'
 
   gem 'selenium-webdriver'
 
