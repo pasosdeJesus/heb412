@@ -29,7 +29,8 @@ module Heb412
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :es
 
-    #config.railties_order = [:main_app, Sip::Engine, :all]
+    config.railties_order = [:main_app, Sip::Engine, Mr519Gen::Engine,
+                             Heb412Gen::Engine, :all]
 
     config.colorize_logging = true
 
