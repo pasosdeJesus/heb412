@@ -94,7 +94,7 @@ group :test do
 
   gem 'capybara'
 
-  gem 'selenium'
+  #gem 'selenium'
 
   gem 'selenium-webdriver'
 

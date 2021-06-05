@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 1a06a6809d96ef13553ad6945802af112d91ab14
+  revision: 6d95474b230a29644644957abe96634c1b69667c
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -161,8 +161,6 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    jar_wrapper (0.1.8)
-      zip
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     jquery-ui-rails (6.0.1)
@@ -265,8 +263,6 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
-    selenium (0.2.11)
-      jar_wrapper
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
@@ -319,7 +315,6 @@ GEM
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.4.2)
-    zip (2.0.2)
 
 PLATFORMS
   ruby
@@ -354,7 +349,6 @@ DEPENDENCIES
   rspreadsheet
   rubyzip (>= 2.0)
   sassc-rails
-  selenium
   selenium-webdriver
   simple_form
   simplecov (< 0.18)
