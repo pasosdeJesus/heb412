@@ -9,7 +9,7 @@
 <% content_for :menu do %>
   <%= grupo_menus do %>
     <% if !current_usuario.nil? %>
-        <%= opcion_menu "Actores sociales", sip.actoressociales_path %>
+        <%= opcion_menu "Organizaciones sociales", sip.actoressociales_path %>
         <%= opcion_menu "Personas", sip.personas_path %>
     <% end %>
   <% end %>
@@ -18,10 +18,10 @@
       <%= despliega_abajo "Documentos" do %>
         <%= opcion_menu "Nube", heb412_gen.sisini_path, 
           desplegable: true %>
-        <%= opcion_menu "Plantillas para listados", 
+        <%= opcion_menu "Plantillas para listado", 
           heb412_gen.plantillashcm_path,
           desplegable: true %>
-        <%= opcion_menu "Plantillas para un registro", 
+        <%= opcion_menu "Plantillas para registro", 
           heb412_gen.plantillashcr_path,
           desplegable: true %>
       <% end %>

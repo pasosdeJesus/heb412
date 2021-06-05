@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 6d95474b230a29644644957abe96634c1b69667c
+  revision: 15bd380b9d43fd1f04ccd249ea135daa62c6bd86
   branch: main
   specs:
     heb412_gen (1.0.b6)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 134b5da4626d27a58e437d37a45646b034c1d893
+  revision: 8f388d74e20099c6e69d9ba52df2b9ea48842dea
   branch: main
   specs:
     sip (2.0.b11)
@@ -139,7 +139,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     crass (1.0.6)
     devise (4.8.0)
       bcrypt (~> 3.0)

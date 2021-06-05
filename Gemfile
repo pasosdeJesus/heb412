@@ -94,8 +94,6 @@ group :test do
 
   gem 'capybara'
 
-  #gem 'selenium'
-
   gem 'selenium-webdriver'
 
   gem 'simplecov', '<0.18'
