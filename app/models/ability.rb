@@ -24,7 +24,7 @@ class Ability  < Heb412Gen::Ability
       can :read, Heb412Gen::Plantillahcr
       case usuario.rol 
       when Ability::ROLANALI
-        can :manage, Sip::Actorsocial
+        can :manage, Sip::Orgsocial
         can :manage, Sip::Persona
         can [:read, :new, :update, :create, :destroy], Sip::Ubicacion
       when Ability::ROLADMIN
@@ -35,7 +35,7 @@ class Ability  < Heb412Gen::Ability
         
         can :manage, Mr519Gen::Formulario
 
-        can :manage, Sip::Actorsocial
+        can :manage, Sip::Orgsocial
         can :manage, Sip::Persona
         can :manage, Sip::Ubicacion
 
