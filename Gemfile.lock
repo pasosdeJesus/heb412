@@ -1,6 +1,17 @@
 GIT
+  remote: https://github.com/kreeti/kt-paperclip.git
+  revision: 379d3a8ca990ce91baef7498bd74c8680c181c3c
+  specs:
+    kt-paperclip (7.0.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
+      marcel (~> 1.0.1)
+      mime-types
+      terrapin (~> 0.6.0)
+
+GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 724260407be0e2c509cca0651be8c99d19a813ce
+  revision: 56c22535c0bbb04e00ed5c9bf0c67cd24fe030f8
   branch: orgsocial
   specs:
     heb412_gen (1.0.b6)
@@ -11,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: 917450e779fb99a1301e3426530e6cade614a7e8
+  revision: 08575cd71b307ef543a866943f302c962f62cf6c
   branch: orgsocial
   specs:
     mr519_gen (0.2.0)
@@ -20,7 +31,7 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: d3d7f4fd197395da9e0b1844360ac7d3ce9a04f2
+  revision: 58657209237e46292be47e52f88565ddf2cf4cfc
   branch: orgsocial
   specs:
     sip (2.0.b11)
@@ -156,7 +167,7 @@ GEM
       railties (>= 3.2)
     erubi (1.10.0)
     execjs (2.8.1)
-    ffi (1.15.1)
+    ffi (1.15.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.10)
@@ -333,13 +344,13 @@ DEPENDENCIES
   dotenv-rails
   heb412_gen!
   jbuilder
+  kt-paperclip!
   lazybox
   libxml-ruby
   minitest
   mr519_gen!
   nokogiri (>= 1.11.1)
   odf-report
-  paperclip
   pg
   prawn
   puma
