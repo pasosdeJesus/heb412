@@ -17,6 +17,9 @@ gem 'devise-i18n'
 
 gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
 
+gem 'kt-paperclip',                 # Anexos
+  git: 'https://github.com/kreeti/kt-paperclip.git'
+
 gem 'lazybox' # Dialogo modal
 
 gem 'libxml-ruby'
@@ -24,8 +27,6 @@ gem 'libxml-ruby'
 gem 'nokogiri', '>=1.11.1'
 
 gem 'odf-report' # Genera ODT
-
-gem 'paperclip' # Maneja adjuntos
 
 gem 'prawn' # Para generar PDF
 
