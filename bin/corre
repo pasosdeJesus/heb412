@@ -67,7 +67,7 @@ FileUtils.chdir RAIZ_AP do
 
     puts "\n== Eliminando bitácoras, archivos temporales y recursos =="
     system! 'bin/rails log:clear tmp:clear'
-    system! 'rm -rf public/packs/*'
+    system! 'rm -rf public/entrypoints/*'
     system! "rm -rf public/#{ENV['RAILS_RELATIVE_URL_ROOT']}/assets/*"
 
     puts "\n== Crea recursos CSS y Javascript =="
