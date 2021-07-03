@@ -42,7 +42,6 @@ test:
     - yarn install
     - gem install bundler --no-document
     - bundle install --jobs $(nproc) "${FLAGS[@]}"
-    - cd test/dummy
     - cp .env.gitlab .env
     - cp db/structure.sql db/structure.sql.copia 
     - sed -e 's/provider = libc,//g;s/SET default_table_access_method.*/-- &/g' db/structure.sql.copia > db/structure.sql 
