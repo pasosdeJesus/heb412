@@ -50,8 +50,7 @@ gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
 
-gem 'webpacker', '6.0.0.beta.7'
-  #git: 'https://github.com/rails/webpacker.git'
+gem 'webpacker', '~> 6.0.0.rc.1'
 
 gem 'will_paginate' # Listados en páginas
 
@@ -60,8 +59,8 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
-  #path: '../sip'
+  #git: 'https://github.com/pasosdeJesus/sip.git', branch: :main
+  path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
   git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :main
