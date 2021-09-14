@@ -33,6 +33,9 @@ test:
     - pwd
     - which ruby
     - ruby -v
+    - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+    - chmod +x ./cc-test-reporter
+    - ./cc-test-reporter before-build
     - export APT_CACHE_DIR=`pwd`/apt-cache && mkdir -pv $APT_CACHE_DIR
     - apt-get update -yy && apt-get install build-essential libpq-dev postgresql-client -y
     - curl -sL https://deb.nodesource.com/setup_12.x -o nodesource_setup.sh
@@ -54,4 +57,6 @@ test:
   script:
     - CONFIG_HOSTS=www.example.com bin/rails test
 
+  after_script:
+    - ./cc-test-reporter after-build -t simplecov --exit-code 2fb282f54ad990d39d0c0801d92f4554adce97dac8d4eb0dc66dc96301f969c9
 
