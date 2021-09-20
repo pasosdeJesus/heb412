@@ -24,7 +24,7 @@ Rails.start()
 Turbolinks.start()
 
 import $ from "expose-loader?exposes=$,jQuery!jquery";
-import 'popper.js'              // Dialogos emergentes usados por bootstrap
+import '@popperjs/core';
 import * as bootstrap from 'bootstrap'              // Maquetacion y elementos de diseño
 
 import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
