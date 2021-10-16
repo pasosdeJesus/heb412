@@ -38,6 +38,7 @@ class Ability  < Heb412Gen::Ability
         can :manage, Sip::Orgsocial
         can :manage, Sip::Persona
         can :manage, Sip::Ubicacion
+        can :manage, Sip::Ubicacionpre
 
         can :manage, ::Usuario
         can :manage, :tablasbasicas
