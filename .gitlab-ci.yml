@@ -60,9 +60,6 @@ test:
     - bin/rails assets:precompile
   script:
     - CONFIG_HOSTS=www.example.com bin/rails test
-
-  after_script:
-    - ./cc-test-reporter after-build -t simplecov --exit-code 2fb282f54ad990d39d0c0801d92f4554adce97dac8d4eb0dc66dc96301f969c9
     - ./cc-test-reporter after-build -t simplecov --exit-code $?
 
 
