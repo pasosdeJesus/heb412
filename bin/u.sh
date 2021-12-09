@@ -34,7 +34,7 @@ if (test "$?" != "0") then {
 
 $DOAS su - ${USUARIO_AP} -c "cd $DIRAP; 
   echo \"== Iniciando unicorn... ==\"; 
-  ${defuroot} PUERTOUNICORN=${PUERTOUNICORN} CONFIG_HOSTS=${CONFIG_HOSTS}\
+  ${defuroot} PUERTOUNICORN=${PUERTOUNICORN} CONFIG_HOSTS="${CONFIG_HOSTS}"\
     DIRAP=$DIRAP RAILS_ENV=production SECRET_KEY_BASE=${SECRET_KEY_BASE} \
     BD_CLAVE=${BD_CLAVE} BD_USUARIO=${BD_USUARIO} \
     BD_PRO=${BD_PRO} \
