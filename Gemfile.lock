@@ -31,8 +31,8 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/sip.git
-  revision: 5204326d567e7d53972547276302f08570d14038
-  branch: main
+  revision: fc93ea71c55aace2e3a5c25dba618b42de47cf33
+  branch: sinjqueryui
   specs:
     sip (2.0)
       cancancan
@@ -180,7 +180,7 @@ GEM
     kgio (2.11.4)
     lazybox (1.1.5)
     libxml-ruby (3.2.1)
-    loofah (2.12.0)
+    loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
