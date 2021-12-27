@@ -27,7 +27,7 @@ config/unicorn.conf.minimal.rb
 .byebug_history
 config/initializers/punto_montaje.rb
 public/heb412/
-
+app/assets/builds/
 
 /public/packs
 /public/packs-test

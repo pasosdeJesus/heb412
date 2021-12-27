@@ -17,6 +17,8 @@ gem 'devise-i18n'
 
 gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
 
+gem 'jsbundling-rails'
+
 gem 'kt-paperclip',                 # Anexos
   git: 'https://github.com/kreeti/kt-paperclip.git'
 
@@ -46,11 +48,11 @@ gem 'sassc-rails' # Para generar CSS
 
 gem 'simple_form' # Formularios simples 
 
+gem 'sprockets-rails'
+
 gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
-
-gem 'webpacker', '~> 6.0.0.rc.1'
 
 gem 'will_paginate' # Listados en páginas
 
@@ -59,15 +61,15 @@ gem 'will_paginate' # Listados en páginas
 # lógico y no alfabetico como las gemas anteriores) 
 
 gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails7
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails7jses
   #path: '../sip'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
-  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :rails7
+  git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :rails7jses
   #path: '../mr519_gen'
 
 gem 'heb412_gen',  # Motor de nube y llenado de plantillas
-  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :rails7
+  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :rails7jses
   #path: '../heb412_gen'
 
 
