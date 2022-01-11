@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'babel-transpiler'
 
 gem 'bcrypt'
 
@@ -50,6 +51,10 @@ gem 'simple_form' # Formularios simples
 
 gem 'sprockets-rails'
 
+gem 'stimulus-rails'
+
+gem 'turbo-rails'
+
 gem 'twitter_cldr' # ICU con CLDR
 
 gem 'tzinfo' # Zonas horarias
@@ -60,22 +65,22 @@ gem 'will_paginate' # Listados en páginas
 # Motores que se sobrecargan vistas (deben ponerse en orden de apilamiento 
 # lógico y no alfabetico como las gemas anteriores) 
 
-gem 'sip', # Motor generico
-  git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails7jses
-  #path: '../sip'
+gem 'heb412_gen',  # Motor de nube y llenado de plantillas
+  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :rails7jses
+  #path: '../heb412_gen-rails7'
 
 gem 'mr519_gen', # Motor de gestion de formularios y encuestas
   git: 'https://github.com/pasosdeJesus/mr519_gen.git', branch: :rails7jses
-  #path: '../mr519_gen'
+  #path: '../mr519_gen-rails7'
 
-gem 'heb412_gen',  # Motor de nube y llenado de plantillas
-  git: 'https://github.com/pasosdeJesus/heb412_gen.git', branch: :rails7jses
-  #path: '../heb412_gen'
+gem 'sip', # Motor generico
+  git: 'https://github.com/pasosdeJesus/sip.git', branch: :rails7jses
+  #path: '../sip-rails7'
 
 
 group :development, :test do
 
-  #gem 'byebug' # Depurar
+  gem 'debug', ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
 
   gem 'dotenv-rails'
 
