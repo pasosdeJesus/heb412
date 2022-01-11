@@ -10,8 +10,7 @@ class Sip::PersonasController < Heb412Gen::ModelosController
   end
 
   def index(c = nil)
-    puts "OJO personas_path=#{personas_path}"
-    index_sip(c)
+    super(c)
   end
 
 end
