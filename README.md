@@ -1,6 +1,6 @@
 # Heb412
 
-[![Revisado por Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) [![Estado Construcción](https://gitlab.com/pasosdeJesus/heb412/badges/main/pipeline.svg)](https://gitlab.com/pasosdeJesus/heb412/-/pipelines)[![Clima del Código](https://codeclimate.com/github/pasosdeJesus/heb412/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/heb412) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/heb412/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/heb412) [![security](https://hakiri.io/github/pasosdeJesus/heb412/master.svg)](https://hakiri.io/github/pasosdeJesus/heb412/master)
+[![Revisado por Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com) Pruebas y seguridad:[![Estado Construcción](https://gitlab.com/pasosdeJesus/cor1440/badges/main/pipeline.svg)](https://gitlab.com/pasosdeJesus/cor1440/-/pipelines?page=1&scope=all&ref=main) [![Clima del Código](https://codeclimate.com/github/pasosdeJesus/heb412/badges/gpa.svg)](https://codeclimate.com/github/pasosdeJesus/heb412) [![Cobertura de Pruebas](https://codeclimate.com/github/pasosdeJesus/heb412/badges/coverage.svg)](https://codeclimate.com/github/pasosdeJesus/heb412)
 
 ![Logo de heb412](https://raw.githubusercontent.com/pasosdeJesus/heb412/master/app/assets/images/logo.jpg)
 
