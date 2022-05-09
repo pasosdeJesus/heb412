@@ -1,14 +1,17 @@
 source 'https://rubygems.org'
 
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
 gem 'babel-transpiler'
 
 gem 'bcrypt'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
-gem 'cancancan'
+gem 'cancancan' # Control de acceso
 
-gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', branch: 'new_id_with_ajax' # Formularios anidados (algunos con ajax)
+gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git', 
+  branch: 'new_id_with_ajax' # Formularios anidados (algunos con ajax)
 
 gem 'coffee-rails' 
 
@@ -22,8 +25,6 @@ gem 'jsbundling-rails'
 
 gem 'kt-paperclip',                 # Anexos
   git: 'https://github.com/kreeti/kt-paperclip.git'
-
-gem 'lazybox' # Dialogo modal
 
 gem 'libxml-ruby'
 
@@ -103,15 +104,13 @@ group :test do
 
   gem 'capybara'
 
-  gem 'selenium-webdriver'
-
   gem 'simplecov', '<0.18'
 
 end
 
 
 group :production do
-  
+
   gem 'unicorn' # Para despliegue
 
 end
