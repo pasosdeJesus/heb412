@@ -5,7 +5,7 @@
 ![Logo de heb412](https://raw.githubusercontent.com/pasosdeJesus/heb412/master/app/assets/images/logo.jpg)
 
 
-### Requerimientos
+### Requisitos
 
 Ver <https://github.com/pasosdeJesus/sip/blob/main/doc/requisitos.md>
 
