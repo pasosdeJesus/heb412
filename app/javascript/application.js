@@ -19,6 +19,15 @@ import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js'
 
 import 'gridstack'
 
+// Apexcharts
+import ApexCharts from 'apexcharts'
+window.ApexCharts = ApexCharts
+import apexes from 'apexcharts/dist/locales/es.json'
+Apex.chart = {
+  locales: [apexes],
+  defaultLocale: 'es',
+}
+
 let esperarRecursosSprocketsYDocumento = function (resolver) {
   if (typeof window.puntomontaje == 'undefined') {
     setTimeout(esperarRecursosSprocketsYDocumento, 100, resolver)

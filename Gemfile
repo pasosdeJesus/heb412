@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
-
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '>=3.1.0'
+
+gem 'apexcharts'
 
 gem 'babel-transpiler'
 
@@ -14,6 +17,8 @@ gem 'cocoon', git: 'https://github.com/vtamara/cocoon.git',
   branch: 'new_id_with_ajax' # Formularios anidados (algunos con ajax)
 
 gem 'coffee-rails' 
+
+gem 'color'
 
 gem 'devise' # Autenticación 
 
@@ -32,9 +37,17 @@ gem 'nokogiri', '>=1.11.1'
 
 gem 'odf-report' # Genera ODT
 
-gem 'prawn' # Para generar PDF
-
 gem 'pg' # Postgresql
+
+gem 'prawn' # Generación de PDF
+
+gem 'prawnto_2',  :require => 'prawnto'
+
+gem 'prawn-table'
+
+gem 'rack'
+
+gem 'rack-cors'
 
 gem 'rails', '~> 7.0'
 
@@ -83,6 +96,8 @@ group :development, :test do
 
   gem 'debug', ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
 
+  gem 'colorize'
+
   gem 'dotenv-rails'
 
   gem 'minitest'
@@ -90,9 +105,11 @@ end
 
 group :development do
 
-  gem 'colorize' # Colores en consola
+  gem 'erd'
 
   gem 'puma'
+
+  gem 'rails-erd'
 
   gem 'web-console' # Consola en páginas 
 
@@ -103,6 +120,8 @@ group :test do
   gem 'cuprite'
 
   gem 'capybara'
+
+  gem 'rails-controller-testing'
 
   gem 'simplecov', '<0.18'
 

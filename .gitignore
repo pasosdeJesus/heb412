@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-config/database.yml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -17,22 +16,16 @@ config/database.yml
 /tmp
 *~
 public/assets/
-public/colchon-articulos/
 archivo/
-config/application.rb
-config/initializers/sip.rb
-config/routes.rb
-config/unicorn.conf.minimal.rb
 *swp
 .byebug_history
-config/initializers/punto_montaje.rb
 public/heb412/
 app/assets/builds/
 
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
+public/packs
+public/packs-test
+node_modules
+yarn-error.log
 yarn-debug.log*
 .yarn-integrity
 coverage/
@@ -44,6 +37,3 @@ config/credentials.yml.enc
 app/javascript/controllers/sip
 app/javascript/controllers/mr519_gen
 app/javascript/controllers/heb412_gen
-app/javascript/controllers/cor1440_gen
-app/javascript/controllers/sal7711_gen
-app/javascript/controllers/sivel2_gen
