@@ -7,7 +7,7 @@
 
 ### Requerimientos
 
-Ver <https://github.com/pasosdeJesus/sip/wiki/Requerimientos>
+Ver <https://github.com/pasosdeJesus/sip/blob/main/doc/requisitos.md>
 
 ### Arquitectura
 
