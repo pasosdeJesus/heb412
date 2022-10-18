@@ -119,7 +119,8 @@ end
 group :test do
   gem 'cuprite'
 
-  gem 'capybara'
+  gem 'capybara',
+    git: 'https://github.com/teamcapybara/capybara.git', branch: :master
 
   gem 'rails-controller-testing'
 
