@@ -7,14 +7,14 @@
 
 ### Requisitos
 
-Ver <https://github.com/pasosdeJesus/sip/blob/main/doc/requisitos.md>
+Ver <https://github.com/pasosdeJesus/msip/blob/main/doc/requisitos.md>
 
 ### Arquitectura
 
 Es una aplicación que emplea los motores genéricos 
 [heb412_gen](https://github.com/pasosdeJesus/heb412_gen),
 [mr519_gen](https://github.com/pasosdeJesus/mr519_gen)
-y  [sip](https://github.com/pasosdeJesus/sip)
+y  [msip](https://github.com/pasosdeJesus/msip)
 
 
 ## Uso

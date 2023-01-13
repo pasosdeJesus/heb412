@@ -1,7 +1,7 @@
-class ApplicationController < Sip::ApplicationController
+class ApplicationController < Msip::ApplicationController
 
   protect_from_forgery with: :exception
-  helper Sip::Engine.helpers
+  helper Msip::Engine.helpers
 
 end
 

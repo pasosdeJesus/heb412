@@ -11,41 +11,43 @@ GIT
 
 GIT
   remote: https://github.com/pasosdeJesus/heb412_gen.git
-  revision: 3b7062dd0cbed0f7428387437488c47e9ad98394
-  branch: main
+  revision: 5901ed2d3d0cfe717275cbca2a816163640a3b3c
+  branch: msip
   specs:
     heb412_gen (2.1.0.beta1)
       mr519_gen
+      msip
       redcarpet
       rspreadsheet
-      sip
 
 GIT
   remote: https://github.com/pasosdeJesus/mr519_gen.git
-  revision: a827f46c1600a36047f31a4c4fbb1d4b4ec13807
-  branch: main
+  revision: 6eeb618b63128874881eb5b1e990dc1bc5e466c3
+  branch: msip
   specs:
     mr519_gen (2.1.0.beta1)
+      msip
       rails
-      sip
 
 GIT
-  remote: https://github.com/pasosdeJesus/sip.git
-  revision: 20b5646a730f8a8c174ab2bc252953e5feb9bd79
+  remote: https://github.com/pasosdeJesus/msip.git
+  revision: 95b70d07336a4823cd49efff1f412ec92823bb4b
   branch: main
   specs:
-    sip (2.1.0.beta1)
-      cancancan
-      coffee-rails
-      devise
-      devise-i18n
-      kt-paperclip
-      minitest
-      rails
-      rails-i18n
-      sassc-rails
-      simple_form
-      twitter_cldr
+    msip (2.2.0.alfa3)
+      cancancan (~> 3)
+      devise (~> 4)
+      devise-i18n (~> 1)
+      kt-paperclip (~> 7)
+      pg (~> 1)
+      rails (~> 7.0)
+      rails-i18n (~> 7)
+      sassc-rails (~> 2)
+      simple_form (~> 5)
+      sprockets-rails (~> 3)
+      stimulus-rails (~> 1)
+      twitter_cldr (~> 6)
+      will_paginate (~> 3)
 
 GIT
   remote: https://github.com/vtamara/cocoon.git
@@ -209,7 +211,7 @@ GEM
     loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
-    mail (2.8.0)
+    mail (2.8.0.1)
       mini_mime (>= 0.1.1)
       net-imap
       net-pop
@@ -222,7 +224,7 @@ GEM
     mime-types-data (3.2022.0105)
     mini_mime (1.1.2)
     mini_portile2 (2.8.1)
-    minitest (5.16.3)
+    minitest (5.17.0)
     msgpack (1.6.0)
     net-imap (0.3.4)
       date
@@ -234,7 +236,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.10)
+    nokogiri (1.14.0)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     odf-report (0.7.3)
@@ -253,7 +255,7 @@ GEM
       prawn (>= 1.0.0)
       rails (>= 3.2)
     public_suffix (5.0.1)
-    puma (6.0.1)
+    puma (6.0.2)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.5)
@@ -402,6 +404,7 @@ DEPENDENCIES
   libxml-ruby
   minitest
   mr519_gen!
+  msip!
   nokogiri (>= 1.11.1)
   odf-report
   pg
@@ -421,7 +424,6 @@ DEPENDENCIES
   sassc-rails
   simple_form
   simplecov (< 0.18)
-  sip!
   sprockets-rails
   stimulus-rails
   turbo-rails (~> 1.0)

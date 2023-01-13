@@ -6,7 +6,7 @@ El logo es foto de dominio público de Peggy Marco disponible en:
 
 
 Esta aplicación usa los motores 
-[sip](https://github.com/pasosdeJesus/sip),
+[msip](https://github.com/pasosdeJesus/msip),
 [mr519_gen](https://github.com/pasosdeJesus/mr519_gen) y
 [heb412_gen](https://github.com/pasosdeJesus/heb412_gen/graphs/contributors)
 también mantenidos y re-factorizados por Pasos de Jesús de 

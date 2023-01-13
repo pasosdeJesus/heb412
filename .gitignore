@@ -34,6 +34,6 @@ coverage/
 .env
 public/sisarch
 config/credentials.yml.enc
-app/javascript/controllers/sip
+app/javascript/controllers/msip
 app/javascript/controllers/mr519_gen
 app/javascript/controllers/heb412_gen
