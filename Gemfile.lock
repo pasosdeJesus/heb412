@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: c645f53e616159b0a18cb47f06502d6b69c2b96e
+  revision: fb542620a496f00a0c2ac3e4110de56cfc3ad0c1
   branch: main
   specs:
     heb412_gen (2.1.0.beta1)
