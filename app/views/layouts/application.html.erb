@@ -31,6 +31,8 @@
         <% if current_usuario.rol == Ability::ROLADMIN %>
           <%= opcion_menu "Usuarios", main_app.usuarios_path,
             desplegable: true %>
+          <%= opcion_menu "Copia de respaldo cifrada", 
+            msip.respaldo7z_path, desplegable: true %>
         <% end %>
         <% if can? :manage, Mr519Gen::Formulario %>
           <%= opcion_menu "Formularios", mr519_gen.formularios_path, 
