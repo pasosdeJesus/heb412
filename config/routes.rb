@@ -5,6 +5,21 @@ Rails.application.routes.draw do
 
     devise_scope :usuario do
       get 'sign_out' => 'devise/sessions#destroy'
+      get 'salir' => 'devise/sessions#destroy',
+        as: :terminar_sesion
+      post 'usuarios/iniciar_sesion', to: 'devise/sessions#create'
+      get 'usuarios/iniciar_sesion', to: 'devise/sessions#new',
+        as: :iniciar_sesion
+
+      # El siguiente para superar mala generación del action en el formulario
+      # cuando se monta en sitio diferente a / y se autentica mal (genera 
+      # /puntomontaje/puntomontaje/usuarios/sign_in )
+      if (Rails.configuration.relative_url_root != '/') 
+        ruta = File.join(Rails.configuration.relative_url_root, 
+                         'usuarios/sign_in')
+        post ruta, to: 'devise/sessions#create'
+        get  ruta, to: 'devise/sessions#new'
+      end
     end
     devise_for :usuarios, :skip => [:registrations], module: :devise
     as :usuario do
