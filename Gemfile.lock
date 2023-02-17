@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: fea03f61ba2b15b7f0ad97265c90f4cd8545a401
+  revision: d604f67438f7500582cab94720a34db2f129015b
   branch: main
   specs:
     heb412_gen (2.2.0.alfa1)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: f0305cb22575157db60b981ead97e77377be7850
+  revision: f7ca8afa408a1bdbb2e9ac96646433a6fe4dc52d
   branch: main
   specs:
     mr519_gen (2.2.0.beta1)
@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 17bbcc87b62256682de18a9e6ef177e76c00ca7d
+  revision: d8dbae27945e6f48f1b6475ef9f1308648c8ac93
   branch: main
   specs:
     msip (2.2.0.beta1)
@@ -205,7 +205,6 @@ GEM
       activesupport (>= 5.0.0)
     jsbundling-rails (1.1.1)
       railties (>= 6.0.0)
-    json (2.6.3)
     kgio (2.11.4)
     libxml-ruby (4.0.0)
     loofah (2.19.1)
@@ -328,11 +327,12 @@ GEM
     simple_form (5.2.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
-    simplecov (0.17.1)
+    simplecov (0.22.0)
       docile (~> 1.1)
-      json (>= 1.8, < 3)
-      simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.2)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.4)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -423,7 +423,7 @@ DEPENDENCIES
   rubyzip (>= 2.0)
   sassc-rails
   simple_form
-  simplecov (< 0.18)
+  simplecov
   sprockets-rails
   stimulus-rails
   turbo-rails (~> 1.0)
@@ -434,7 +434,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 3.1.0p0
+   ruby 3.2.0p0
 
 BUNDLED WITH
    2.4.7
