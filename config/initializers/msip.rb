@@ -11,9 +11,9 @@ Msip.setup do |config|
   end
   config.titulo = "Heb412 - #{Heb412Gen::VERSION}"
   config.descripcion = "Plantilla para una aplicación web con autenticación, nube y geografía de Colombia"
-  config.codigofuente = "https://github.com/pasosdeJesus/heb412"
-  config.urlcontribuyentes = "https://github.com/pasosdeJesus/heb412/graphs/contributors"
-  config.urlcreditos = "https://github.com/pasosdeJesus/heb412/blob/master/CREDITOS.md"
+  config.codigofuente = "https://gitlab.com/pasosdeJesus/heb412"
+  config.urlcontribuyentes = "https://gitlab.com/pasosdeJesus/heb412/-/graphs/main?ref_type=heads"
+  config.urlcreditos = "https://gitlab.com/pasosdeJesus/heb412/-/blob/main/CREDITOS.md"
   config.agradecimientoDios = "<p>
   Agradecemos a Dios por su palabra y por permitir este desarrollo, el cual 
   le dedicamos.
