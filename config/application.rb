@@ -9,7 +9,9 @@ Bundler.require(*Rails.groups)
 module Heb412
   class Application < Rails::Application
 
-    config.load_defaults 7.0
+    config.load_defaults 7.1
+
+    config.autoload_lib(ignore: %w(assets tasks))
 
     # Las configuraciones en config/environments/* tiene precedencia sobre
     # las especificadas aquí.

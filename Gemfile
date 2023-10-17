@@ -9,7 +9,7 @@ gem 'babel-transpiler'
 
 gem 'bcrypt'
 
-gem 'bootsnap', '>=1.1.0', require: false
+gem 'bootsnap', require: false
 
 gem 'cancancan' # Control de acceso
 
@@ -33,7 +33,7 @@ gem 'kt-paperclip',                 # Anexos
 
 gem 'libxml-ruby'
 
-gem 'nokogiri', '>=1.11.1'
+gem 'nokogiri'
 
 gem 'odf-report' # Genera ODT
 
@@ -49,13 +49,13 @@ gem 'rack'
 
 gem 'rack-cors'
 
-gem 'rails', '~> 7.0'
+gem 'rails', '~> 7.1'
 
 gem 'rails-i18n'
 
 gem 'redcarpet'
 
-gem 'rubyzip', '>= 2.0'
+gem 'rubyzip'
 
 gem 'rspreadsheet'
 
@@ -67,7 +67,7 @@ gem 'sprockets-rails'
 
 gem 'stimulus-rails'
 
-gem 'turbo-rails', '~> 1.0'
+gem 'turbo-rails'
 
 gem 'twitter_cldr' # ICU con CLDR
 
@@ -94,7 +94,7 @@ gem 'msip', # Motor generico
 
 group :development, :test do
 
-  gem 'debug', ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
+  gem 'debug', platforms: %i[ mri mingw x64_mingw ]
 
   gem 'colorize'
 
