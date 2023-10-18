@@ -7,14 +7,15 @@ services:
     alias: postgres
 
 variables:
-  RAILS_ENV: test
+  CC_TEST_REPORTER_ID: "2fb282f54ad990d39d0c0801d92f4554adce97dac8d4eb0dc66dc96301f969c9"
+  NODE_MAJOR: 20
+  NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
   POSTGRES_ENABLED: "true"
   POSTGRES_USER: runner
   POSTGRES_PASSWORD: ""
   POSTGRES_DB: heb412gen_pru
   POSTGRES_HOST_AUTH_METHOD: trust
-  NOKOGIRI_USE_SYSTEM_LIBRARIES: "true"
-  CC_TEST_REPORTER_ID: "2fb282f54ad990d39d0c0801d92f4554adce97dac8d4eb0dc66dc96301f969c9"
+  RAILS_ENV: test
 
 
 stages:
@@ -36,15 +37,16 @@ test:
     - ruby -v
     - export APT_CACHE_DIR=`pwd`/apt-cache && mkdir -pv $APT_CACHE_DIR
     - apt-get update -yy && apt-get install build-essential libpq-dev postgresql-client -y
-    - curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - # https://www.linuxcapable.com/how-to-install-node-js-on-debian-linux/ 
-    - apt install -y -qq nodejs
+    - curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    - echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list # https://deb.nodesource.com/setup_X
+    - apt-get update -yy && apt install -y -qq nodejs
     - node -v
     - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
     - echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
     - apt-get update -qq && apt-get -o dir::cache::archives="$APT_CACHE_DIR" install -yqq yarn
     - yarn install
     - gem install bundler --no-document
-    - bundle install --jobs $(nproc) "${FLAGS[@]}"
+    - bundle check --path vendor/bundle || bundle install --path vendor/bundle --jobs $(nproc) "${FLAGS[@]}"
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
     - cp .env.gitlab .env
@@ -60,7 +62,9 @@ test:
     - export exit_code=$?
   after_script:
     - if (test "${exit_code}" == "") then { exit_code=0; } fi; CC_TEST_REPORTER_ID="2fb282f54ad990d39d0c0801d92f4554adce97dac8d4eb0dc66dc96301f969c9" ./cc-test-reporter after-build -t simplecov --exit-code "${exit_code}" || true
-
+  artifacts:
+    paths:
+      - coverage/
 
 sast:
     stage: test
