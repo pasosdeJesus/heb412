@@ -18,8 +18,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 31f166f4c14aae30f070b28707338f052b6ba82b
-  branch: main
+  revision: 4cade209a8067e168485b7e5fa105fbea29e8b62
+  branch: rails7.1
   specs:
     heb412_gen (2.2.0.beta4)
       mr519_gen
@@ -29,8 +29,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 43e4dfbf40204a240bfac5366aa9bc785e7579b3
-  branch: main
+  revision: dac3a2d2be6972774145f0c62a232d28ca49c140
+  branch: rails7.1
   specs:
     mr519_gen (2.2.0.beta4)
       msip
@@ -38,8 +38,8 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: e3834c2e2377fd8cbf1371e9f1bf06407d959c8c
-  branch: main
+  revision: c6404061952adc4e26a0b60792381ea33a972105
+  branch: rails7.1
   specs:
     msip (2.2.0.beta4)
       cancancan (~> 3)
@@ -465,4 +465,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.20
+   2.4.21
