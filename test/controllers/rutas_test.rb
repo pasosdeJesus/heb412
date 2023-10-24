@@ -6,7 +6,10 @@ class RutasTest < ActionDispatch::IntegrationTest
 
   # Ejemplo con base en https://medium.com/@yutafujii_59175/a-simple-login-test-with-rails-devise-and-unit-test-68bc4fade4ba
   test "personas_path usable" do
-    assert_equal '/heb412/personas', personas_path
+    mp = msip_path
+    pp = personas_path
+    #debugger
+    assert_equal '/heb412/personas', pp
     usuario = @current_usuario = ::Usuario.find(1)
     get '/heb412/usuarios/sign_in'
     sign_in usuario
