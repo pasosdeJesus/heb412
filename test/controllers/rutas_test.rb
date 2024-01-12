@@ -14,7 +14,13 @@ class RutasTest < ActionDispatch::IntegrationTest
     follow_redirect!
     assert_response :success
     #puts response.body
-    get personas_path
+    debugger
+    ruta = personas_path
+    rel = Rails.configuration.relative_url_root 
+    get( ruta, #{}, {"SCRIPT_NAME" => Rails.configuration.relative_url_root })
+        params: {},
+        headers: {"SCRIPT_NAME" => rel }
+       )
     assert_response :success
     #puts response.body
   end
