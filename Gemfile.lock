@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: 69494f68ca08b8a475e14f9ef6df2073bb9728f7
+  revision: b08ea2fccc9a63cf890f4037360a786b783eea55
   branch: main
   specs:
     heb412_gen (2.2.0.beta4)
@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: ed0f545ffeda2ec2860f2f02c0d81c092116b4a8
+  revision: 1f15fbbb2e262f2c92192fa805da509a5ce742f6
   branch: main
   specs:
     mr519_gen (2.2.0.beta4)
@@ -145,7 +145,7 @@ GEM
     bcrypt (3.1.20)
     bigdecimal (3.1.5)
     bindex (0.8.1)
-    bootsnap (1.17.0)
+    bootsnap (1.17.1)
       msgpack (~> 1.2)
     builder (3.2.4)
     camertron-eprun (1.1.1)
@@ -221,7 +221,7 @@ GEM
     jsbundling-rails (1.2.2)
       railties (>= 6.0.0)
     kgio (2.11.4)
-    libxml-ruby (5.0.0)
+    libxml-ruby (5.0.2)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
