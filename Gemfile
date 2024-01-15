@@ -45,7 +45,8 @@ gem 'prawnto_2',  :require => 'prawnto'
 
 gem 'prawn-table'
 
-gem 'rack'
+# Lo mantenemos en 2 mientras se libera unicorn > 6.1
+gem 'rack', "~> 2"
 
 gem 'rack-cors'
 
@@ -130,7 +131,7 @@ end
 
 group :production do
 
-  gem 'unicorn' # Para despliegue
+  gem 'unicorn'
 
 end
 
