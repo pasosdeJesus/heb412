@@ -51,7 +51,7 @@ if (test "$SALTAUNITARIAS" != "1") then {
   echo "== Pruebas de regresión unitarias"
   mkdir -p cobertura-unitarias/
   rm -rf cobertura-unitarias/{*,.*}
-  CONFIG_HOSTS=www.example.com RUTA_RELATIVA=/ ${RAILS} test test/models test/controllers test/helpers
+  CONFIG_HOSTS=www.example.com ${RAILS} test test/models test/controllers test/helpers
   if (test "$?" != "0") then {
     echo "No pasaron pruebas de regresión unitarias";
     exit 1;

@@ -50,7 +50,7 @@ gem 'rack', "~> 2"
 
 gem 'rack-cors'
 
-gem 'rails', '~> 7.1', '< 7.2'
+gem 'rails', '~> 7.2'
   #path: "../tmp/rails/"
 
 gem 'rails-i18n'

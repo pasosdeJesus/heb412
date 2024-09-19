@@ -1,10 +1,16 @@
-# Podria forzarse orden con:
+# Be sure to restart your server when you modify this file.
 
-#['msip', 'mr519_gen', 'heb412_gen'].each do |s| 
-#  byebug
-#  require_dependency File.join(Gem::Specification.find_by_name(s).gem_dir,
-#                             '/config/initializers/inflections.rb')
-#end
+# Add new inflection rules using the following format. Inflections
+# are locale specific, and you may define rules for as many different
+# locales as you wish. All of these examples are active by default:
+# ActiveSupport::Inflector.inflections(:en) do |inflect|
+#   inflect.plural /^(ox)$/i, "\\1en"
+#   inflect.singular /^(ox)en/i, "\\1"
+#   inflect.irregular "person", "people"
+#   inflect.uncountable %w( fish sheep )
+# end
 
-ActiveSupport::Inflector.inflections do |inflect|
-end
+# These inflection rules are supported but not enabled by default:
+# ActiveSupport::Inflector.inflections(:en) do |inflect|
+#   inflect.acronym "RESTful"
+# end
