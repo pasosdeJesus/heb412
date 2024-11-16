@@ -8,22 +8,21 @@ import "@hotwired/turbo-rails";
 Rails.start();
 window.Rails = Rails
 
-import './jquery'
-
 import 'popper.js'              // Dialogos emergentes usados por bootstrap
 import * as bootstrap from 'bootstrap'              // Maquetacion y elementos de diseño
-import 'chosen-js/chosen.jquery';       // Cuadros de seleccion potenciados
-import 'bootstrap-datepicker'
-import 'bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js'
+window.bootstrap = bootstrap
 
 import 'gridstack'
 
 import Msip__Motor from "./controllers/msip/motor"
 window.Msip__Motor = Msip__Motor
+Msip__Motor.iniciar()
 import Mr519Gen__Motor from "./controllers/mr519_gen/motor"
 window.Mr519Gen__Motor = Mr519Gen__Motor
+Mr519Gen__Motor.iniciar()
 import Heb412Gen__Motor from "./controllers/heb412_gen/motor"
 window.Heb412Gen__Motor = Heb412Gen__Motor
+Heb412Gen__Motor.iniciar()
 
 // Apexcharts
 import ApexCharts from 'apexcharts'
@@ -35,7 +34,7 @@ Apex.chart = {
 }
 
 let esperarRecursosSprocketsYDocumento = function (resolver) {
-  if (typeof window.puntomontaje == 'undefined') {
+  if (typeof window.puntoMontaje == 'undefined') {
     setTimeout(esperarRecursosSprocketsYDocumento, 100, resolver)
     return false
   }
@@ -53,10 +52,10 @@ let promesaRecursosSprocketsYDocumento = new Promise((resolver, rechazar) => {
 
 promesaRecursosSprocketsYDocumento.then((mensaje) => {
   console.log(mensaje)
-  var root = window;
-  msip_prepara_eventos_comunes(root);
-  mr519_gen_prepara_eventos_comunes(root);
-  heb412_gen_prepara_eventos_comunes(root);
+
+  Msip__Motor.ejecutarAlCargarDocumentoYRecursos()
+  Mr519Gen__Motor.ejecutarAlCargarDocumentoYRecursos()
+  Heb412Gen__Motor.ejecutarAlCargarDocumentoYRecursos()
 })
 
 
@@ -68,7 +67,6 @@ document.addEventListener('turbo:load', (e) => {
   
   console.log('Escuchador turbo:load')
 
-  msip_ejecutarAlCargarPagina(window) // Establece root.puntomontaje
   Msip__Motor.ejecutarAlCargarPagina()
   Mr519Gen__Motor.ejecutarAlCargarPagina()
   Heb412Gen__Motor.ejecutarAlCargarPagina()
