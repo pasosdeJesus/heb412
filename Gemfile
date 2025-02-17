@@ -1,126 +1,132 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
+
+source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '>=3.0.2'
+ruby ">=3.0.2"
 
-gem 'apexcharts'
+gem "apexcharts"
 
-gem 'bcrypt'
+gem "bcrypt"
 
-gem 'bootsnap', '>=1.1.0', require: false
+gem "bootsnap", ">=1.1.0", require: false
 
-gem 'cancancan' # Control de acceso
+gem "cancancan" # Control de acceso
 
-gem 'color'
+gem "color"
 
-gem 'devise' # Autenticación 
+gem "devise" # Autenticación
 
-gem 'devise-i18n'
+gem "devise-i18n"
 
-gem 'jbuilder' # API JSON facil. Ver: https://github.com/rails/jbuilder
+gem "jbuilder" # API JSON facil. Ver: https://github.com/rails/jbuilder
 
-gem 'jsbundling-rails'
+gem "jsbundling-rails"
 
-gem 'kt-paperclip',                 # Anexos
-  git: 'https://github.com/kreeti/kt-paperclip.git'
+gem "kt-paperclip", # Anexos
+  git: "https://github.com/kreeti/kt-paperclip.git"
 
-gem 'libxml-ruby'
+gem "libxml-ruby"
 
-gem 'nokogiri', '>=1.11.1'
+gem "nokogiri", ">=1.11.1"
 
-gem 'odf-report' # Genera ODT
+gem "odf-report" # Genera ODT
 
-gem 'pg' # Postgresql
+gem "pg" # Postgresql
 
-gem 'prawn' # Generación de PDF
+gem "prawn" # Generación de PDF
 
-gem 'prawnto_2',  :require => 'prawnto'
+gem "prawnto_2", require: "prawnto"
 
-gem 'prawn-table'
+gem "prawn-table"
 
 # Lo mantenemos en 2 mientras se libera unicorn > 6.1
-gem 'rack', "~> 2"
+gem "rack", "~> 2"
 
-gem 'rack-cors'
+gem "rack-cors"
 
-gem 'rails', '~> 7.2'
-  #path: "../tmp/rails/"
+gem "rails", "~> 7.2"
+# path: "../tmp/rails/"
 
-gem 'rails-i18n'
+gem "rails-i18n"
 
-gem 'redcarpet'
+gem "redcarpet"
 
-gem 'rubyzip', '>= 2.0'
+gem "rubyzip", ">= 2.0"
 
-gem 'rspreadsheet'
+gem "rspreadsheet"
 
-gem 'sassc-rails' # Para generar CSS
+gem "sassc-rails" # Para generar CSS
 
-gem 'simple_form' # Formularios simples 
+gem "simple_form" # Formularios simples
 
-gem 'sprockets-rails'
+gem "sprockets-rails"
 
-gem 'stimulus-rails'
+gem "stimulus-rails"
 
-gem 'turbo-rails', '~> 1.0'
+gem "turbo-rails", "~> 1.0"
 
-gem 'twitter_cldr' # ICU con CLDR
+gem "twitter_cldr" # ICU con CLDR
 
-gem 'tzinfo' # Zonas horarias
+gem "tzinfo" # Zonas horarias
 
-gem 'will_paginate' # Listados en páginas
+gem "will_paginate" # Listados en páginas
 
 #####
-# Motores que se sobrecargan vistas (deben ponerse en orden de apilamiento 
-# lógico y no alfabetico como las gemas anteriores) 
+# Motores que se sobrecargan vistas (deben ponerse en orden de apilamiento
+# lógico y no alfabetico como las gemas anteriores)
 
-gem 'heb412_gen',  # Motor de nube y llenado de plantillas
-  git: 'https://gitlab.com/pasosdeJesus/heb412_gen.git', branch: 'main'
-  #path: '../heb412_gen'
+gem "heb412_gen", # Motor de nube y llenado de plantillas
+  git: "https://gitlab.com/pasosdeJesus/heb412_gen.git",
+  branch: "main"
+# path: '../heb412_gen'
 
-gem 'mr519_gen', # Motor de gestion de formularios y encuestas
-  git: 'https://gitlab.com/pasosdeJesus/mr519_gen.git', branch: 'main'
-  #path: '../mr519_gen'
+gem "mr519_gen", # Motor de gestion de formularios y encuestas
+  git: "https://gitlab.com/pasosdeJesus/mr519_gen.git",
+  branch: "main"
+# path: '../mr519_gen'
 
-gem 'msip', # Motor generico
-  git: 'https://gitlab.com/pasosdeJesus/msip.git', branch: 'main'
-  #path: '../msip'
-
+gem "msip", # Motor generico
+  git: "https://gitlab.com/pasosdeJesus/msip.git",
+  branch: "main"
+# path: '../msip'
 
 group :development, :test do
+  gem "brakeman"
 
-  gem 'debug', ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
+  gem "bundler-audit"
 
-  gem 'colorize'
+  gem "code-scanning-rubocop"
 
-  gem 'dotenv-rails'
+  gem "colorize"
 
-  gem 'minitest'
+  gem "debug"
+
+  gem "dotenv-rails"
+
+  gem "rails-erd"
+
+  gem "rubocop-minitest"
+
+  gem "rubocop-rails"
+
+  gem "rubocop-shopify"
 end
 
 group :development do
+  gem "erd"
 
-  gem 'erd'
+  gem "puma"
 
-  gem 'puma'
-
-  gem 'rails-erd'
-
-  gem 'web-console' # Consola en páginas 
-
+  gem "web-console" # Consola en páginas
 end
-
 
 group :test do
-  gem 'rails-controller-testing'
+  gem "rails-controller-testing"
 
-  gem 'simplecov'
+  gem "simplecov"
 end
-
 
 group :production do
-
-  gem 'unicorn'
-
+  gem "unicorn"
 end
-

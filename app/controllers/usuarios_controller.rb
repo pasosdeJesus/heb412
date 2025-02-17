@@ -1,7 +1,7 @@
-require 'msip/concerns/controllers/usuarios_controller'
+# frozen_string_literal: true
+
+require "msip/concerns/controllers/usuarios_controller"
 
 class UsuariosController < Heb412Gen::ModelosController
-
   include Msip::Concerns::Controllers::UsuariosController
-
 end

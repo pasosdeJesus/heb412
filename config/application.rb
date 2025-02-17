@@ -1,4 +1,6 @@
-require_relative 'boot'
+# frozen_string_literal: true
+
+require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -20,10 +22,9 @@ Bundler.require(*Rails.groups)
 
 module Heb412
   class Application < Rails::Application
+    config.load_defaults(Rails::VERSION::STRING.to_f)
 
-    config.load_defaults Rails::VERSION::STRING.to_f
-
-    config.autoload_lib(ignore: %w(assets tasks))
+    config.autoload_lib(ignore: ["assets", "tasks"])
 
     # Las configuraciones en config/environments/* tiene precedencia sobre
     # las especificadas aquí.
@@ -36,35 +37,40 @@ module Heb412
     # Active Record auto-convierta a esta zona.
     # Ejecute "rake -D time" para ver una lista de tareas para encontrar
     # nombres de zonas. Por omisión es UTC.
-    config.time_zone = 'America/Bogota'
+    config.time_zone = "America/Bogota"
 
     # El locale predeterminado es :en y todas las traducciones de
     # config/locales/*.rb,yml se cargan automaticamente
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :es
 
-    config.railties_order = [:main_app, Msip::Engine, Mr519Gen::Engine,
-                             Heb412Gen::Engine, :all]
+    config.railties_order = [
+      :main_app,
+      Msip::Engine,
+      Mr519Gen::Engine,
+      Heb412Gen::Engine,
+      :all,
+    ]
 
     config.colorize_logging = true
 
     config.active_record.schema_format = :sql
 
-    puts "CONFIG_HOSTS="+ENV.fetch('CONFIG_HOSTS', 'defensor.info').to_s
+    puts "CONFIG_HOSTS=" + ENV.fetch("CONFIG_HOSTS", "defensor.info").to_s
     config.hosts.concat(
-      ENV.fetch('CONFIG_HOSTS', 'defensor.info').downcase.split(";"))
+      ENV.fetch("CONFIG_HOSTS", "defensor.info").downcase.split(";"),
+    )
 
-
-    config.relative_url_root = ENV.fetch('RUTA_RELATIVA', '/heb412')
+    config.relative_url_root = ENV.fetch("RUTA_RELATIVA", "/heb412")
     puts "config.relative_url_root =#{config.relative_url_root}"
 
     # msip
-    config.x.formato_fecha = ENV.fetch('SIP_FORMATO_FECHA', 'dd/M/yyyy')
+    config.x.formato_fecha = ENV.fetch("SIP_FORMATO_FECHA", "dd/M/yyyy")
     # En el momento soporta 3 formatos: yyyy-mm-dd, dd-mm-yyyy y dd/M/yyyy
 
     # heb412
     config.x.heb412_ruta = Pathname(ENV.fetch(
-      'HEB412_RUTA', Rails.root.join('public', 'heb412').to_s))
-
+      "HEB412_RUTA", Rails.public_path.join("heb412").to_s
+    ))
   end
 end
