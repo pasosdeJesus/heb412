@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/heb412_gen.git
-  revision: d777099ed196be10dadb011fdbba1445562cb670
+  revision: d8300f47c7132af22cc704b049d130e0e7c08311
   branch: main
   specs:
     heb412_gen (2.3.0.alfa4)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/mr519_gen.git
-  revision: 0f89249a6f7d6b7d3a1bc34289eeddafe10e5943
+  revision: 7f86a9dab909fa9aeb8677fe49ce712d9c671cdd
   branch: main
   specs:
     mr519_gen (2.3.0.alfa4)
@@ -31,7 +31,7 @@ GIT
 
 GIT
   remote: https://gitlab.com/pasosdeJesus/msip.git
-  revision: 7faa8b395d7f8f6d24fc9315b1dbd6c3cc69c0f4
+  revision: 294fbfdbe826628f45a17a1caadd3033c5a7f30b
   branch: main
   specs:
     msip (2.3.0.alfa4)
@@ -164,9 +164,9 @@ GEM
     devise-i18n (1.12.1)
       devise (>= 4.9.0)
     docile (1.4.1)
-    dotenv (3.1.4)
-    dotenv-rails (3.1.4)
-      dotenv (= 3.1.4)
+    dotenv (3.1.7)
+    dotenv-rails (3.1.7)
+      dotenv (= 3.1.7)
       railties (>= 6.1)
     drb (2.2.1)
     erd (0.8.2)
@@ -227,18 +227,18 @@ GEM
     net-smtp (0.5.0)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.2)
+    nokogiri (1.18.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.18.2-aarch64-linux-gnu)
+    nokogiri (1.18.3-aarch64-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm-linux-gnu)
+    nokogiri (1.18.3-arm-linux-gnu)
       racc (~> 1.4)
-    nokogiri (1.18.2-arm64-darwin)
+    nokogiri (1.18.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-darwin)
+    nokogiri (1.18.3-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.18.2-x86_64-linux-gnu)
+    nokogiri (1.18.3-x86_64-linux-gnu)
       racc (~> 1.4)
     odf-report (0.8.1)
       mime-types
@@ -495,4 +495,4 @@ RUBY VERSION
    ruby 3.2.1p31
 
 BUNDLED WITH
-   2.6.3
+   2.6.4
