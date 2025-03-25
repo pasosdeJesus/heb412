@@ -3,17 +3,19 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby ">=3.0.2"
+ruby ">=3.4"
 
 gem "apexcharts"
 
 gem "bcrypt"
 
-gem "bootsnap", ">=1.1.0", require: false
+gem "bootsnap"
 
 gem "cancancan" # Control de acceso
 
 gem "color"
+
+gem 'cssbundling-rails'
 
 gem "devise" # Autenticación
 
@@ -28,7 +30,7 @@ gem "kt-paperclip", # Anexos
 
 gem "libxml-ruby"
 
-gem "nokogiri", ">=1.11.1"
+gem "nokogiri"
 
 gem "odf-report" # Genera ODT
 
@@ -40,31 +42,29 @@ gem "prawnto_2", require: "prawnto"
 
 gem "prawn-table"
 
+gem 'propshaft'
+
 # Lo mantenemos en 2 mientras se libera unicorn > 6.1
 gem "rack", "~> 2"
 
 gem "rack-cors"
 
-gem "rails", "~> 7.2"
+gem "rails", "~> 8.0"
 # path: "../tmp/rails/"
 
 gem "rails-i18n"
 
 gem "redcarpet"
 
-gem "rubyzip", ">= 2.0"
+gem "rubyzip"
 
 gem "rspreadsheet"
 
-gem "sassc-rails" # Para generar CSS
-
 gem "simple_form" # Formularios simples
-
-gem "sprockets-rails"
 
 gem "stimulus-rails"
 
-gem "turbo-rails", "~> 1.0"
+gem "turbo-rails"
 
 gem "twitter_cldr" # ICU con CLDR
 
@@ -78,17 +78,17 @@ gem "will_paginate" # Listados en páginas
 
 gem "heb412_gen", # Motor de nube y llenado de plantillas
   git: "https://gitlab.com/pasosdeJesus/heb412_gen.git",
-  branch: "main"
+  branch: "rails8"
 # path: '../heb412_gen'
 
 gem "mr519_gen", # Motor de gestion de formularios y encuestas
   git: "https://gitlab.com/pasosdeJesus/mr519_gen.git",
-  branch: "main"
+  branch: "rails8"
 # path: '../mr519_gen'
 
 gem "msip", # Motor generico
   git: "https://gitlab.com/pasosdeJesus/msip.git",
-  branch: "main"
+  branch: "rails8"
 # path: '../msip'
 
 group :development, :test do
