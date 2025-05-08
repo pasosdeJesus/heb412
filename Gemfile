@@ -78,17 +78,17 @@ gem "will_paginate" # Listados en páginas
 
 gem "heb412_gen", # Motor de nube y llenado de plantillas
   git: "https://gitlab.com/pasosdeJesus/heb412_gen.git",
-  branch: "rails8"
+  branch: "main"
 # path: '../heb412_gen'
 
 gem "mr519_gen", # Motor de gestion de formularios y encuestas
   git: "https://gitlab.com/pasosdeJesus/mr519_gen.git",
-  branch: "rails8"
+  branch: "main"
 # path: '../mr519_gen'
 
 gem "msip", # Motor generico
   git: "https://gitlab.com/pasosdeJesus/msip.git",
-  branch: "rails8"
+  branch: "main"
 # path: '../msip'
 
 group :development, :test do
