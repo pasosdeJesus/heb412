@@ -15,15 +15,11 @@ gem "cancancan" # Control de acceso
 
 gem "color"
 
-gem 'cssbundling-rails'
-
 gem "devise" # Autenticación
 
 gem "devise-i18n"
 
 gem "jbuilder" # API JSON facil. Ver: https://github.com/rails/jbuilder
-
-gem "jsbundling-rails"
 
 gem "kt-paperclip", # Anexos
   git: "https://github.com/kreeti/kt-paperclip.git"
@@ -42,8 +38,6 @@ gem "prawnto_2", require: "prawnto"
 
 gem "prawn-table"
 
-gem 'propshaft'
-
 # Lo mantenemos en 2 mientras se libera unicorn > 6.1
 gem "rack", "~> 2"
 
@@ -61,6 +55,8 @@ gem "rubyzip"
 gem "rspreadsheet"
 
 gem "simple_form" # Formularios simples
+
+gem 'sprockets-rails'
 
 gem "stimulus-rails"
 
